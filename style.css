@@ -1,0 +1,486 @@
+@font-face {
+  font-family: 'Euclid Circular A';
+  src: url('./assets/fonts/Euclid Circular A/EuclidCircularA-Medium.eot');
+  src: local('Euclid Circular A Light'), local('EuclidCircularA-Light'),
+      url('./assets/fonts/Euclid Circular A/EuclidCircularA-Light.eot?#iefix') format('embedded-opentype'),
+      url('./assets/fonts/Euclid Circular A/EuclidCircularA-Light.woff2') format('woff2'),
+      url('./assets/fonts/Euclid Circular A/EuclidCircularA-Light.woff') format('woff'),
+      url('./assets/fonts/Euclid Circular A/EuclidCircularA-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Euclid Circular A';
+  src: url('./assets/fonts/Euclid Circular A/EuclidCircularA-Regular.eot');
+  src: local('Euclid Circular A Regular'), local('EuclidCircularA-Regular'),
+  url('./assets/fonts/Euclid Circular A/EuclidCircularA-Regular.eot?#iefix') format('embedded-opentype'),
+  url('./assets/fonts/Euclid Circular A/EuclidCircularA-Regular.woff2') format('woff2'),
+  url('./assets/fonts/Euclid Circular A/EuclidCircularA-Regular.woff') format('woff'),
+  url('./assets/fonts/Euclid Circular A/EuclidCircularA-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Euclid Circular A';
+  src: url('./assets/fonts/Euclid Circular A/EuclidCircularA-Medium.eot');
+  src: local('Euclid Circular A Medium'), local('EuclidCircularA-Medium'),
+      url('./assets/fonts/Euclid Circular A/EuclidCircularA-Medium.eot?#iefix') format('embedded-opentype'),
+      url('./assets/fonts/Euclid Circular A/EuclidCircularA-Medium.woff2') format('woff2'),
+      url('./assets/fonts/Euclid Circular A/EuclidCircularA-Medium.woff') format('woff'),
+      url('./assets/fonts/Euclid Circular A/EuclidCircularA-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Euclid Circular A';
+  src: url('./assets/fonts/Euclid Circular A/EuclidCircularA-SemiBold.eot');
+  src: local('Euclid Circular A SemiBold'), local('EuclidCircularA-SemiBold'),
+      url('./assets/fonts/Euclid Circular A/EuclidCircularA-SemiBold.eot?#iefix') format('embedded-opentype'),
+      url('./assets/fonts/Euclid Circular A/EuclidCircularA-SemiBold.woff2') format('woff2'),
+      url('./assets/fonts/Euclid Circular A/EuclidCircularA-SemiBold.woff') format('woff'),
+      url('./assets/fonts/Euclid Circular A/EuclidCircularA-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* header block */
+
+.header {
+  background-color: #CBECFF;
+  padding-left: calc(20px + (60 - 20) * ((100vw - 375px) / (1920 - 375)));
+  padding-right: calc(20px + (60 - 20) * ((100vw - 375px) / (1920 - 375)));
+}
+
+.header__container {
+  display: flex;
+  justify-content: flex-end;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.header__language-link {
+  font-family: 'Euclid Circular A';
+  font-weight: 300;
+  font-size: 14px;
+  text-decoration: none;
+  margin-top: calc(26px + (29 - 26) * ((100vw - 375px) / (1920 - 375)));
+  margin-bottom: calc(3px + (15 - 3) * ((100vw - 375px) / (1920 - 375)));
+  margin-right: 15px;
+  padding: 4px;
+  color: #29374E;
+}
+
+.header__language-link_active {
+  background-color: #FFFFFF;
+  border-radius: 12px;
+  color: #0962E8;
+}
+
+/* main block */
+
+.page-main {
+  width: 100%;
+  height: 100%;
+  flex: 1 0 auto;
+  overflow: hidden;
+}
+
+.page-section__main-banner {
+  overflow: hidden;
+  background-color: #CBECFF;
+  padding-left: calc(20px + (60 - 20) * ((100vw - 375px) / (1440 - 375)));
+  padding-right: calc(20px + (60 - 20) * ((100vw - 375px) / (1440 - 375)));
+}
+
+.page-section__main-banner-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.page-section__main-banner-text {
+  width: 50%;
+  padding-top: 78px;
+  flex-shrink: 0;
+  padding-bottom: 280px;
+  color: #29374E;
+}
+
+.page-section__main-banner-title {
+  font-family: 'Euclid Circular A';
+  font-size: calc(36px + (64 - 36) * ((100vw - 375px) / (1440 - 375)));
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: 0.006em;
+}
+
+.page-section__main-banner-title span {
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  color: #0962E8;
+  padding-right: 12px;
+  padding-left: 12px;
+  margin-left: 5px;
+}
+
+.page-section__main-banner-paragraph {
+  width: 364px;
+  margin-top: 14px;
+  margin-bottom: 38px;
+  font-family: 'Euclid Circular A';
+  font-size: calc(16px + (22 - 16) * ((100vw - 375px) / (1440 - 375)));
+  font-weight: 300;
+  line-height: 130%;
+}
+
+.page-section__button {
+  width: 199px;
+  height: 52px;
+  background-color: #0962E8;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 8px;
+  padding: 14px 20px;
+  font-family: 'Euclid Circular A';
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 140%;
+}
+
+.page-section__main-banner-img {
+  height: calc(400px + (555 - 400) * ((100vw - 375px) / (1440 - 375)));
+  margin-top: -75px;
+}
+
+.page-section__main-banner-img img {
+  display: block;
+  width: auto;
+  height: 100%;
+  margin-top: -5px;
+}
+
+/* benefits */
+
+.page-section__benefits {
+  width: 100%;
+  margin-bottom: 115px;
+  padding-left: calc(20px + (60 - 20) * ((100vw - 375px) / (1440 - 375)));
+  padding-right: calc(20px + (60 - 20) * ((100vw - 375px) / (1440 - 375)));
+}
+
+.page-section__benefits-container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.page-section__benefits-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  grid-gap: calc(15px + (20 - 15) * ((100vw - 375px) / (1440 - 375)));
+  margin-top: -85px;
+}
+
+.page-section__benefits-item {
+  position: relative;
+  width: calc(164px + (241 - 164) * ((100vw - 375px) / (1440 - 375)));
+  height: 118px;
+  padding: 15px 20px;
+  list-style: none;
+  background-color: #FFFFFF;
+  box-shadow: 6px 4px 12px rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+}
+
+.page-section__benefits-text {
+  width: 145px;
+  margin-top: 7px;
+  font-family: 'Euclid Circular A';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+}
+
+.page-section__benefits-icon {
+  position: absolute;
+  right: 17px;
+  top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(30px + (40 - 30) * ((100vw - 992px) / (1440 - 992)));
+  height: calc(30px + (40 - 30) * ((100vw - 992px) / (1440 - 992)));
+  margin-left: 10px;
+  background-color: #EFF9FF;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+/* main-products */
+
+.page-section__main-products {
+  width: 100%;
+  padding-left: calc(20px + (60 - 20) * ((100vw - 375px) / (1440 - 375)));
+  padding-right: calc(20px + (60 - 20) * ((100vw - 375px) / (1440 - 375)));
+  margin-bottom: 114px;
+}
+
+.page-section__main-products-container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.page-section__main-products-title {
+  width: calc(343px + (753 - 343) * ((100vw - 375px) / (1440 - 375)));
+  margin: auto;
+  margin-bottom: calc(24px + (44 - 24) * ((100vw - 375px) / (1440 - 375)));
+  font-family: 'Euclid Circular A';
+  font-style: normal;
+  font-weight: 400;
+  font-size: calc(24px + (38 - 24) * ((100vw - 375px) / (1440 - 375)));
+  line-height: 130%;
+  text-align: center;
+}
+
+.page-section__main-products-title span {
+  color: #0962E8;
+}
+
+.page-section__main-products-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-section__main-products-item {
+  position: relative;
+  width: 100%;
+  height: calc(215px + (328 - 215) * ((100vw - 375px) / (1440 - 375)));
+  list-style: none;
+  padding-top: calc(25px + (37 - 25) * ((100vw - 375px) / (1440 - 375)));
+  padding-bottom: calc(25px + (37 - 25) * ((100vw - 375px) / (1440 - 375)));
+  padding-right: calc(16px + (20 - 16) * ((100vw - 375px) / (1440 - 375)));
+  padding-left: calc(16px + (37 - 16) * ((100vw - 375px) / (1440 - 375)));
+  background-color: #E9F6FF;
+  border-radius: 30px;
+  margin-right: 20px;
+}
+
+.page-section__main-products-item:last-child {
+  margin-right: 0;
+}
+
+.page-section__main-products-text {
+  width: calc(162px + (210 - 162) * ((100vw - 375px) / (1440 - 375)));
+}
+
+.page-section__main-products-subtitle {
+  font-family: 'Euclid Circular A';
+  font-weight: 600;
+  font-size: calc(16px + (20 - 16) * ((100vw - 375px) / (1440 - 375)));
+  line-height: 140%;
+  color: #000000;
+}
+
+.page-section__main-products-paragraph {
+  font-family: 'Euclid Circular A';
+  font-weight: 400;
+  font-size: calc(13px + (14 - 13) * ((100vw - 375px) / (1440 - 375)));
+  line-height: 140%;
+  color: #000000;
+}
+
+.page-section__main-products-img {
+  position: absolute;
+  bottom: -7px;
+  right: 10px;
+  width: calc(144px + (240 - 144) * ((100vw - 375px) / (1440 - 375)));
+  height: calc(215px + (317 - 215) * ((100vw - 375px) / (1440 - 375)));
+}
+
+/* valuation */
+
+.page-section__valuation {
+  width: 100%;
+  padding-left: calc(20px + (60 - 20) * ((100vw - 375px) / (1440 - 375)));
+  padding-right: calc(20px + (60 - 20) * ((100vw - 375px) / (1440 - 375)));
+  margin-bottom: 114px;
+}
+
+.page-section__valuation-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.page-section__valuation-text {
+  width: 50%;
+  margin-right: 20px;
+}
+
+.page-section__valuation-title {
+  font-family: 'Euclid Circular A';
+  font-weight: 400;
+  font-size: calc(24px + (38 - 24) * ((100vw - 375px) / (1440 - 375)));
+  line-height: 130%;
+}
+
+.page-section__valuation-title span {
+  color: #0962E8;
+}
+
+.page-section__valuation-paragraph {
+  font-family: 'Euclid Circular A';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  margin-top: calc(4px + (21 - 4) * ((100vw - 375px) / (1440 - 375)));
+  margin-bottom: calc(12px + (37 - 12) * ((100vw - 375px) / (1440 - 375)));
+}
+
+.page-section__valuation-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: calc(15px + (20 - 15) * ((100vw - 375px) / (1440 - 375)));
+  width: 50%;
+}
+
+.page-section__valuation-item {
+  list-style: none;
+  padding: 20px;
+  background: #FFFFFF;
+  border-radius: 30px;
+}
+
+.page-section__valuation-item p {
+  width: calc(130px + (200 - 130) * ((100vw - 375px) / (1440 - 375)));
+  font-family: 'Euclid Circular A';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  margin-top: 10px;
+}
+
+
+
+@media (max-width: 992px) {
+  .page-section__main-banner-container {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+
+  .page-section__main-banner-text {
+    width: 100%;
+    padding: 0;
+  }
+
+  .page-section__main-banner-paragraph {
+    margin-top: 12px;
+    margin-bottom: 16px;
+  }
+
+  .page-section__button {
+    width: 100%;
+    margin-bottom: 37px;
+  }
+
+  .page-section__main-banner-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 0;
+    margin-left: 25px;
+  }
+
+  .page-section__benefits {
+    background-color: #CBECFF;
+    padding-bottom: 33px;
+  }
+
+  .page-section__benefits-list {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin-top: 0px;
+  }
+
+  .page-section__benefits-item {
+    padding: 16px;
+    width: 100%;
+  }
+
+  .page-section__benefits-text {
+    width: calc(126px + (250 - 126) * ((100vw - 375px) / (992 - 375)));
+    margin-top: 26px;
+    font-size: 14px;
+  }
+
+  .page-section__benefits-icon {
+    top: -5px;
+    left: 10px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .page-section__main-products-list {
+    flex-direction: column;
+  }
+
+  .page-section__main-products-item {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 16px;
+  }
+
+  .page-section__main-products-text {
+    width: calc(162px + (400 - 162) * ((100vw - 375px) / (992 - 375)));
+  }
+
+  .page-section__main-products-subtitle {
+    font-family: 'Euclid Circular A';
+    font-weight: 600;
+    font-size: calc(16px + (20 - 16) * ((100vw - 375px) / (1440 - 375)));
+    line-height: 140%;
+    color: #000000;
+  }
+
+  .page-section__main-products-paragraph {
+    font-family: 'Euclid Circular A';
+    font-weight: 400;
+    font-size: calc(13px + (14 - 13) * ((100vw - 375px) / (1440 - 375)));
+    line-height: 140%;
+    color: #000000;
+  }
+
+  .page-section__valuation-container {
+    flex-direction: column;
+  }
+
+  .page-section__valuation-text {
+    width: 100%;
+    text-align: center;
+  }
+
+  .page-section__valuation-list {
+    width: 100%;
+  }
+
+  .page-section__valuation-item {
+    box-shadow: 6px 4px 12px rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+  }
+}
