@@ -52,6 +52,10 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* header block */
 
 .header {
@@ -510,7 +514,16 @@
 
 @media (min-width: 1440px) {
   .page-section__main-banner-img img {
-    margin-top: 0px;
+    height: calc(555px + (555 - 555) * ((100vw - 1440px) / (1920 - 1440)));
+    margin-top: calc(0px + (21 - 0) * ((100vw - 1440px) / (1920 - 1440)));
+  }
+
+  .page-section__main-products-text {
+    width: calc(210px + (210 - 210) * ((100vw - 1440px) / (1920 - 1440)));
+  }
+
+  .page-section__benefits-item {
+    width: calc(241px + (241 - 241) * ((100vw - 1440px) / (1920 - 1440)));
   }
 }
 
